@@ -561,6 +561,12 @@ function App() {
           Help & FAQ
         </button>
         <button 
+          className={`tab ${activeTab === 'contact' ? 'active' : ''}`}
+          onClick={() => setActiveTab('contact')}
+        >
+          📧 Contact
+        </button>
+        <button 
           className={`tab ${activeTab === 'history' ? 'active' : ''}`}
           onClick={() => { setActiveTab('history'); loadHistory(); }}
         >
@@ -999,6 +1005,55 @@ function App() {
                 )}
               </div>
             )}
+          </section>
+        )}
+
+        {/* Contact Tab */}
+        {activeTab === 'contact' && (
+          <section className="contact-section">
+            <h2>📧 Contact Information</h2>
+            
+            <div className="contact-container">
+              {/* Mentor/Guide Section */}
+              <div className="contact-group">
+                <h3>👨‍🏫 Mentor / Guide</h3>
+                <div className="contact-card mentor-card">
+                  <h4>Dr. A H Manjunatha Reddy</h4>
+                  <p><strong>Title:</strong> Professor</p>
+                  <p><strong>Department:</strong> Department of Biotechnology</p>
+                  <p><strong>Organization:</strong> R V College of Engineering</p>
+                  <p><strong>Center:</strong> Center of Excellence in Computational Genomics</p>
+                  <p><strong>Phone:</strong> <a href="tel:+919844573697">+91 9844573697</a></p>
+                  <p><strong>Email:</strong> <a href="mailto:ahmanjunathareddy@rvce.edu.in">ahmanjunathareddy@rvce.edu.in</a></p>
+                </div>
+              </div>
+
+              {/* Team Members Section */}
+              <div className="contact-group">
+                <h3>👥 Project Team</h3>
+                
+                <div className="contact-card">
+                  <h4>Greeshma S</h4>
+                  <p><strong>Department:</strong> Department of Computer Science and Engineering</p>
+                  <p><strong>Organization:</strong> R V College of Engineering</p>
+                  <p><strong>Email:</strong> <a href="mailto:greeshmas.cs23@rvce.edu.in">greeshmas.cs23@rvce.edu.in</a></p>
+                </div>
+
+                <div className="contact-card">
+                  <h4>Bhuvan V Sirigeri</h4>
+                  <p><strong>Department:</strong> Department of Civil Engineering</p>
+                  <p><strong>Organization:</strong> R V College of Engineering</p>
+                  <p><strong>Email:</strong> <a href="mailto:bhuvanvsirigeri.cv23@rvce.edu.in">bhuvanvsirigeri.cv23@rvce.edu.in</a></p>
+                </div>
+
+                <div className="contact-card">
+                  <h4>Dhanush Gowda C</h4>
+                  <p><strong>Department:</strong> Department of Civil Engineering</p>
+                  <p><strong>Organization:</strong> R V College of Engineering</p>
+                  <p><strong>Email:</strong> <a href="mailto:dhanushgowdac.cv23@rvce.edu.in">dhanushgowdac.cv23@rvce.edu.in</a></p>
+                </div>
+              </div>
+            </div>
           </section>
         )}
 
