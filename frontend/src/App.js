@@ -507,7 +507,7 @@ function App() {
   return (
     <div className="app-container">
       <header className="header">
-        <h1>Bioinformatics Analysis Suite</h1>
+        <h1>RVCE - Bioinformatics Analysis Suite</h1>
         <p>Computational Genomics Platform</p>
       </header>
 
@@ -1030,7 +1030,7 @@ function App() {
 
               {/* Team Members Section */}
               <div className="contact-group">
-                <h3>👥 Project Team</h3>
+                <h3>👥 Project Team - Batch 2026</h3>
                 
                 <div className="contact-card">
                   <h4>Greeshma S</h4>
