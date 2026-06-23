@@ -1030,7 +1030,7 @@ function App() {
 
               {/* Team Members Section */}
               <div className="contact-group">
-                <h3>👥 Project Team - Batch 2026</h3>
+                <h3>👥 Project Team - Batch 2023</h3>
                 
                 <div className="contact-card">
                   <h4>Greeshma S</h4>
