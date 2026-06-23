@@ -16,7 +16,7 @@ function App() {
   const [activeTab, setActiveTab] = useState('guide');
   const [activeAnalysisTab, setActiveAnalysisTab] = useState('overview');
 
-  const API_BASE = 'http://localhost:8000';
+  const API_BASE = process.env.REACT_APP_API_URL || 'http://localhost:8000';
 
   // Load history on mount
   useEffect(() => {
