@@ -27,9 +27,16 @@ app = FastAPI(
 )
 
 # Add CORS middleware
+allow_origins = [
+    "http://localhost:3000",
+    "http://localhost:8000",
+    "https://bio-analysis-frontend.onrender.com",
+    "https://bio-analysis-backend.onrender.com",
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:8000"],
+    allow_origins=allow_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
